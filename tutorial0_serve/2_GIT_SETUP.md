@@ -16,7 +16,7 @@ You will now have a copy of the course repository on your own github account. Yo
 
 ### 3. Set up your deployment
 
-To deploy your site on [Github Pages](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site) you can go to your repository's `Settings` tab and then scroll down to `GitHub Pages` section. Select `master` as source and then your site will be avallable at `https://<user>.github.io/<repository>/`
+To deploy your site on [Github Pages](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site) you can go to your repository's `Settings` tab and then scroll down to `GitHub Pages` section. Select `master` as source and then your site will be avallable at `https://<user>.github.io/<repository>/`. *NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes.
 
 <img src='../lib/assets/pages.png' width='500px'>
 
