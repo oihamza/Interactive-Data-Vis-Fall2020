@@ -1,47 +1,3 @@
-// console.log("hi");
-
-
-
-// d3.csv("../data/surveyResults.csv").then(data =>{
-
-
-
-// const body = d3.selectAll("#d3-table")
-// .append("tbody")
-// .attr("id","2")
-
-
-
-// const rows = body.selectAll(".row")
-// .data(data)
-// .join("tr")
-// .attr("class","row");
-
-// const cells = rows
-// .append("td")
-// .style("color","darkBlue")
-// .style("background","orange")
-// .style("border-radius","5px")
-// .text(d => d.Timestamp)
-
-
-// })
-
-
-
-
-
-// const div = d3.select('.parent')
-// .attr("class","container")
-// .style("background-color","yellow")
-// .append("span")
-// .text("Hellooooo")
-
-// load in csv
-
-
-
-
 d3.csv("../data/countries-internet.csv").then(data => {
     // once the data loads, console log it
     console.log("data", data);
@@ -112,3 +68,46 @@ d3.select(".source")
 document.getElementById("scroll-to-bottom").addEventListener("click", function () {
     document.body.scrollIntoView(false);
   });
+
+
+  // console.log("hi");
+
+
+
+// d3.csv("../data/surveyResults.csv").then(data =>{
+
+
+
+// const body = d3.selectAll("#d3-table")
+// .append("tbody")
+// .attr("id","2")
+
+
+
+// const rows = body.selectAll(".row")
+// .data(data)
+// .join("tr")
+// .attr("class","row");
+
+// const cells = rows
+// .append("td")
+// .style("color","darkBlue")
+// .style("background","orange")
+// .style("border-radius","5px")
+// .text(d => d.Timestamp)
+
+
+// })
+
+
+
+
+
+// const div = d3.select('.parent')
+// .attr("class","container")
+// .style("background-color","yellow")
+// .append("span")
+// .text("Hellooooo")
+
+// load in csv
+
