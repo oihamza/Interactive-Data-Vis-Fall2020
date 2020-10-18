@@ -1,16 +1,6 @@
 [
     {
-      "name": "Whitehouse, Sheldon",
-      "state": "RI",
-      "district": "",
-      "party": "D",
-      "environmental_rating": 100,
-      "ideology_rating": 0.18029928127453942
-    },
-    {
       "name": "Ernst, Joni",
-      "state": "IA",
-      "district": "",
       "party": "R",
       "environmental_rating": 7,
       "ideology_rating": 0.9332695727307143
