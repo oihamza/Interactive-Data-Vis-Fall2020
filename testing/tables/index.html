@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar chart!</title>
+</head>
+<body>
+    <div class="d3-table"></div>
+    <script src="../../lib/d3.js"></script>
+    <script src="main.js"></script>
+    
+    
+
+
+    <style>
+        #greenhouse {
+            position: relative;
+            width: 100%;
+            vertical-align: middle;
+            margin: 0;
+            overflow: hidden;
+        }
+        #greenhouse svg { 
+            display: inline-block;
+            position: absolute;
+            top: 0; 
+            left: 0;
+        }
+        #lines {
+            z-index: 3;
+        }
+        #greenhouse-details {
+            display: flex;
+            margin-top: 60%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .narrow-text {
+            background-color: #d4ffde;
+            padding: 3% 5%;
+            margin: 3%;
+            flex-basis: 25%;
+        }
+        @media only screen and (max-width : 480px) {
+                .narrow-text {
+                    flex-basis: 100%;
+                }
+        }
+    </style>
+    <div id="greenhouse">
+        <svg id="lines" viewBox="0 0 1280 1280" 
+    preserveAspectRatio="xMinYMin meet">
+            <path stroke="#d4ffde" stroke-width="3" fill="none"  d="
+                M 130,820
+                L 130,320
+                l 50,0
+            "/>
+            <path stroke="#d4ffde" stroke-width="3" fill="none" d="
+                M 620,820
+                L 620,520
+                l -230,0
+            "/>
+            <path stroke="#d4ffde" stroke-width="3" fill="none" d="
+                M 1100,820
+                L 1100,380                         
+                l -290,0
+            "/>
+        </svg>
+        <svg viewBox="0 0 1280 720" 
+        preserveAspectRatio="xMinYMin meet">
+            <image width="1280" 
+            height="720" xlink:href="https://dkli3tbfz4zj3.cloudfront.net/all/202006_SaladDays/images/greenhouse.jpg">
+            </image>
+            <circle cx="220" cy="320" r="40" stroke="#d4ffde" 
+            stroke-width="3" fill="none" />
+            <circle cx="320" cy="520" r="70" stroke="#d4ffde" 
+            stroke-width="3" fill="none" />
+            <circle cx="750" cy="380" r="60" stroke="#d4ffde" 
+            stroke-width="3" fill="none" />
+        </svg>
+        <div id="greenhouse-details">
+            <div class="narrow-text">
+                <p>Whip up a delicious salad</p>
+            </div>
+            <div class="narrow-text">
+                <p>Cuddle up to Marguerit’s Snow Stalker companion</p>
+            </div>
+            <div class="narrow-text">
+                <p>Learn how to farm new, unusual plants</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
