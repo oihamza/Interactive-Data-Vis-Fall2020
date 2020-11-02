@@ -1,0 +1,25 @@
+svg{
+    background: none;   
+   }
+   .state{
+       fill: orange;
+       stroke: white;
+       stroke-width: 0.9;
+   }
+   .selected{
+       fill: lightskyblue
+   }
+   .state_label{
+       fill: black;
+       font-size: 10px;
+   }
+   .city-circle{
+       background-color: brown;
+       color: gold;
+   }
+   .selected2{
+       fill: purple
+   }
+   .selected1{
+       fill: purple
+   }
