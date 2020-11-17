@@ -28,9 +28,9 @@ d3.csv('stateVoterTurnout.csv', function (data) {
 	// data is an object
 	console.log(data);
 
-	let values = data[1].value;
+	// let values = data[1].value;
 
-	console.log(values);
+	// console.log(values);
 
 	let tooltip = d3
 		.select('body')
@@ -42,8 +42,7 @@ d3.csv('stateVoterTurnout.csv', function (data) {
 		.style('border', 'solid')
 		.style('border-width', '2px')
 		.style('border-radius', '5px')
-		.style('padding', '5px')
-		.text(`${values} voters`);
+		.style('padding', '5px');
 
 	root.sum(function (d) {
 		return +d.value;
@@ -77,15 +76,16 @@ d3.csv('stateVoterTurnout.csv', function (data) {
 		.style('fill', '#945f04')
 
 		.on('mouseover', function () {
-			return tooltip.style('visibility', 'visible');
+			tooltip.style('visibility', 'visible');
 		})
-		.on('mousemove', function () {
-			return tooltip
+		.on('mousemove', function (d) {
+			tooltip
 				.style('top', d3.event.pageY - 10 + 'px')
-				.style('left', d3.event.pageX + 10 + 'px');
+				.style('left', d3.event.pageX + 10 + 'px')
+				.text(`${d.data.value} voters`);
 		})
 		.on('mouseout', function () {
-			return tooltip.style('visibility', 'hidden');
+			tooltip.style('visibility', 'hidden');
 		});
 
 	// and to add the text labels
