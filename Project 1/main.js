@@ -82,8 +82,11 @@ d3.csv('stateVoterTurnout.csv', function (data) {
 			tooltip
 				.style('top', d3.event.pageY - 10 + 'px')
 				.style('left', d3.event.pageX + 10 + 'px')
-				.text(`${d.data.value} people voted`);
+				.text(
+					`${d.data.value} people voted. ${d.data.electoral} electoral votes for ${d.data.name} went to the ${d.data.party} party.`
+				);
 		})
+
 		.on('mouseout', function () {
 			tooltip.style('visibility', 'hidden');
 		});
